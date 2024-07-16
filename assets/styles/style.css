@@ -83,22 +83,48 @@ body {
   height: auto;
 }
 
-.centered-text {
+.centered {
   position: absolute;
   display: flex;
   flex-direction: column;
   overflow: hidden ;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   padding: 20px;
   color: white;
   width: 10vw;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.9;
+}
+
+.centered p{
+  text-align: center;
 }
 
 .mini-image {
   width: 100%;
+}
+/*  */
+
+/*  */
+.stats .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.stats .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.stats .boxes .box:hover{
+  background: #F4D03F;
+  color: #fff;
 }
