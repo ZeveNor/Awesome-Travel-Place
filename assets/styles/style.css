@@ -1,0 +1,104 @@
+/* Root, Main, Most Effects, Important Selector Sections */
+body {
+  margin: 20px 40px;
+  background-color: #eaeef6;
+}
+/* - */
+
+/* Font Initialize Sections */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Lobster&display=swap');
+
+.handWrite-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.engFont-regular {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* - */
+
+/* Navbar Sections */
+.nav-main {
+  display: block;
+  height: fit-content;
+  border: 0.7px white;
+  box-shadow: 10px 9px 10px lightblue;
+}
+
+.nav-main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffff;
+}
+
+.nav-main li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: rgb(78, 72, 72);
+}
+
+.nav-main li .nav-icon {
+  padding-left: 60px;
+  font-size: 30px;
+}
+
+.nav-main li .nav-left {
+  float: left !important;
+}
+
+.nav-main li .nav-right {
+  float: right !important;
+}
+
+.nav-main li a span {
+  font-size: 30px;
+  padding-right: 4px;
+  display: block;
+}
+/* - */
+
+/*  */
+.image-viewing {
+  position: relative; /* Set relative position */
+  display: block;
+  overflow: hidden;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.image-viewing img {
+  width: 100%;
+  height: auto;
+}
+
+.centered-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden ;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  width: 10vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  opacity: 0.7;
+}
+
+.mini-image {
+  width: 100%;
+}
