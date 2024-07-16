@@ -41,4 +41,4 @@ jobs:
           status: ${{ job.status }}
           description: "Build and deploy to GitHub Pages"
           color: 0x00FF00
-          title: "Launch on website"
+          title: "[Launch on website](https://zevenor.github.io/Awesome-Travel-Place/)"
