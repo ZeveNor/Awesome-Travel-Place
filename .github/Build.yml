@@ -53,4 +53,4 @@ jobs:
         if: always()
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          title: "Github Pages Action"
+          title: "Workflow"
