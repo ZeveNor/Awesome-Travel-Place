@@ -1,9 +1,20 @@
 /* Root, Main, Most Effects, Important Selector Sections */
 body {
   margin: 20px 40px;
+  
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   background-color: #eaeef6;
 }
 /* - */
+
+/* Often uses class selector */
+.weight-500{
+  font-weight: 500
+}
+.weight-800{
+  font-weight: 800
+}
+/*  */
 
 /* Font Initialize Sections */
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Lobster&display=swap');
@@ -41,7 +52,6 @@ body {
   display: block;
   font-size: 13px;
   font-weight: 600;
-  text-align: center;
   padding: 12px 25px;
   text-decoration: none;
   color: rgb(78, 72, 72);
@@ -109,22 +119,53 @@ body {
 /*  */
 
 /*  */
+.seemore-section{
+  margin-top: 20px;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+@keyframes seemore-blink {
+  50%{
+    background: #050505c4;
+    color: #ffffff;
+  }
+}
+
+.seemore-section button{
+  font-size: 20px;
+  font-weight: 700;
+  border: solid white 0; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 30px;
+  padding: 1% 20%;
+  animation: seemore-blink 5s linear infinite;
+}
+/*  */
+
+/*  */
 .stats .boxes{
+  margin: 0 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .stats .boxes .box{
   margin: 20px 0;
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 4 - 30px);
   text-align: center;
   border-radius: 12px;
-  padding: 30px 10px;
+  padding: 10px 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   cursor: default;
   transition: all 0.4s ease;
 }
+
+.stats .box .material{
+  font-size: 90px; 
+}
 .stats .boxes .box:hover{
-  background: #F4D03F;
-  color: #fff;
+  background: #050505c4;
+  color: #ffffff;
 }
