@@ -16,18 +16,55 @@ body {
 /*  */
 
 /* Font Initialize Sections */
-@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Lobster&display=swap');
-
-.handWrite-regular {
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
+@font-face {
+  font-family: 'Reddit';
+  src: url('../fonts/RedditSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
-.engFont-regular {
-  font-family: "Reddit Sans", sans-serif;
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Courget';
+  src: url('../fonts/Courgette-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-Medium.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'KanitLight';
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.handWrite{
+  font-family: 'Lobster', kanit;
+}
+
+.engFont{
+  font-family: 'Reddit';
+}
+
+.engFont2{
+  font-family: 'Courget';
+}
+
+.thaiFont{
+  font-family: 'KanitLight';
 }
 /* - */
 
@@ -132,6 +169,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   border-radius: 30px;
   padding-bottom: 2px; 
+   
 }
 
 .seemore-section p::after{
@@ -179,6 +217,7 @@ body {
 
 /*  */
 .content{
+  font-weight: 500;
   margin: 15px 50px; 
   background-color: rgba(0, 0, 0, 0.040);
 }
