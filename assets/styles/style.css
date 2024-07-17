@@ -1,7 +1,6 @@
 /* Root, Main, Most Effects, Important Selector Sections */
 body {
   margin: 20px 40px;
-  
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   background-color: #eaeef6;
 }
@@ -11,8 +10,8 @@ body {
 .weight-500{
   font-weight: 500
 }
-.weight-800{
-  font-weight: 800
+.weight-700{
+  font-weight: 700
 }
 /*  */
 
@@ -126,21 +125,28 @@ body {
   align-items: center !important;
 }
 
-@keyframes seemore-blink {
-  50%{
-    background: #050505c4;
-    color: #ffffff;
-  }
-}
-
-.seemore-section button{
+.seemore-section {
   font-size: 20px;
   font-weight: 700;
   border: solid white 0; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   border-radius: 30px;
-  padding: 1% 20%;
+  padding-bottom: 2px; 
+}
+
+.seemore-section p::after{
+  content: "Scroll down to view more";
   animation: seemore-blink 5s linear infinite;
+}
+
+@keyframes seemore-blink {
+  35%{
+    content: "Please use Full screen";
+  }
+  75%{
+    content: "This website doesn't have responsive";
+  }
+
 }
 /*  */
 
@@ -168,4 +174,109 @@ body {
 .stats .boxes .box:hover{
   background: #050505c4;
   color: #ffffff;
+}
+/*  */
+
+/*  */
+.content{
+  margin: 15px 50px; 
+  background-color: rgba(0, 0, 0, 0.040);
+}
+
+.content .card{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+
+.content .card .card-head{
+  background-color: orange;
+  width: 10px;
+}
+
+.content .card h2{
+  margin-left: 2%;
+}
+
+.content .card-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.content .card-flex .card-image{
+  width: 70vw;
+  padding: 40px;
+  display: flex;
+  justify-content: right;
+}
+
+.content .card-flex .card-image div {
+  width: 100%;
+  height: auto;
+  content: url(../../src/card_album/20240716_140251.jpg);
+  animation: image-card 15s linear infinite;
+}
+
+@keyframes image-card {
+  25%{
+    content: url(../../src/card_album/20240716_140325.jpg);
+  }
+  50%{
+    content: url(../../src/card_album/20240716_140343.jpg);
+  }
+  75%{
+    content: url(../../src/card_album/20240716_140428.jpg);
+  }
+}
+
+.content .card-flex .card-text{
+  padding: 30px 50px;
+  width: 70vw;
+  justify-content: left;
+}
+
+.content p{
+  text-indent: 10%; 
+  white-space: normal;
+  text-align:justify;
+}
+/*  */
+
+/*  */
+.footer-card{
+  margin-top: 3%;
+  color: #ffff;
+  border-bottom: solid rgb(255, 174, 0) 10px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.793);
+}
+.footer-card .footer-box{
+  display: block;
+  height: 70px;
+  padding: 10px 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-card .footer-box .footer-left{
+  float: left !important;
+}
+
+.footer-card .footer-box .footer-right{
+  float: right !important;
+}
+
+.footer-box ul{
+  list-style: none;
+}
+
+.footer-box ul li a{
+  padding-right: 20px;
+  color: #ffffff6c;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-box ul li i{
+  font-size: 30px;
 }
