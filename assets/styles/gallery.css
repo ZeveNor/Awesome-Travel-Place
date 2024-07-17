@@ -1,0 +1,56 @@
+#bg-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  z-index: -1;
+  min-height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.nav-main{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+/*  */
+
+/*  */
+.trans-main{
+  border: solid white;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.433);
+}
+/*  */
+
+/*  */
+.content-body{
+  padding: 40px 140px;
+  background-color: white;
+}
+
+.content-body .content-header{
+  border-left: solid #c4686a 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.040);
+  padding: 1pt 0;
+}
+
+.content-body .content-header h2{
+  margin-left: 30px; 
+}
+/*  */
+
+/*  */
+.image-frame{
+  height: 350px;
+}
+
+.image-raw{
+  width: auto;
+  height: 100%;
+}
+
+.table-frame{
+  padding: 0 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
