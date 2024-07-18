@@ -1,0 +1,47 @@
+#bg-image{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  z-index: -1;
+  min-height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.trans-main .card{
+  background-color: white;
+  border-radius: 20px;
+  margin: 2% 3%;
+  padding: 30px 50px;
+  width: 23%;
+}
+
+.trans-main .card .head{
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.map-content{
+  background-color: white;
+  padding: 30px;
+}
+
+.map-content .logo{
+  margin-bottom: 40px;
+}
+
+.map-content .logo-frame{
+  display: flex;
+  flex-direction: row;
+}
+
+.map-content .logo-frame a{
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}

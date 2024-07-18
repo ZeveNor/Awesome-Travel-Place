@@ -42,15 +42,15 @@
 
 /*  */
 .image-frame{
-  height: 350px;
+  width: 24vw;
 }
 
 .image-raw{
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .table-frame{
-  padding: 0 10px;
+  padding: 10px 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
